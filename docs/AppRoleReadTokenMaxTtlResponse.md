@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**TokenMaxTtl** | Pointer to **int32** | The maximum lifetime of the generated token | [optional] 
+**TokenMaxTtl** | Pointer to **int64** | The maximum lifetime of the generated token | [optional] 
 
 
 

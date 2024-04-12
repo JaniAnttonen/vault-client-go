@@ -28644,7 +28644,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -28701,7 +28701,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -28749,13 +28749,13 @@
           "period": {
             "type": "integer",
             "description": "Use \"token_period\" instead. If this and \"token_period\" are both specified, only \"token_period\" will be used.",
-            "format": "duration",
+            "format": "int64",
             "deprecated": true
           },
           "token_period": {
             "type": "integer",
-            "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value. This takes an integer number of seconds, or a string duration (e.g. \"24h\").",
-            "format": "duration"
+            "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value. This takes an integer number of seconds.",
+            "format": "int64"
           }
         }
       },
@@ -28802,7 +28802,7 @@
           "period": {
             "type": "integer",
             "description": "Use \"token_period\" instead. If this and \"token_period\" are both specified, only \"token_period\" will be used.",
-            "format": "duration",
+            "format": "int64",
             "deprecated": true
           },
           "policies": {
@@ -28827,7 +28827,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_bound_cidrs": {
             "type": "array",
@@ -28839,12 +28839,12 @@
           "token_explicit_max_ttl": {
             "type": "integer",
             "description": "If set, tokens created via this role carry an explicit maximum TTL. During renewal, the current maximum TTL values of the role and the mount are not checked for changes, and any updates to these values will have no effect on the token being renewed.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_max_ttl": {
             "type": "integer",
             "description": "The maximum lifetime of the generated token",
-            "format": "duration"
+            "format": "int64"
           },
           "token_no_default_policy": {
             "type": "boolean",
@@ -28857,7 +28857,7 @@
           "token_period": {
             "type": "integer",
             "description": "If set, tokens created via this role will have no max lifetime; instead, their renewal period will be fixed to this value.",
-            "format": "duration"
+            "format": "int64"
           },
           "token_policies": {
             "type": "array",
@@ -28869,7 +28869,7 @@
           "token_ttl": {
             "type": "integer",
             "description": "The initial ttl of the token to generate",
-            "format": "duration"
+            "format": "int64"
           },
           "token_type": {
             "type": "string",
@@ -28905,7 +28905,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID should expire. Defaults to 0, meaning no expiration.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -28927,7 +28927,7 @@
           "token_max_ttl": {
             "type": "integer",
             "description": "The maximum lifetime of the generated token",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -28946,7 +28946,7 @@
           "token_ttl": {
             "type": "integer",
             "description": "The initial ttl of the token to generate",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -29026,7 +29026,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
@@ -29287,7 +29287,7 @@
           "secret_id_ttl": {
             "type": "integer",
             "description": "Duration in seconds after which the issued secret ID expires.",
-            "format": "duration"
+            "format": "int64"
           }
         }
       },
